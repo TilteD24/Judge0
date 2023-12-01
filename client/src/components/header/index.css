@@ -1,0 +1,28 @@
+#header {
+  min-height: 7em;
+  margin: 0 1em;
+}
+
+div {
+  display: block;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.userlogin {
+  float: right;
+  text-align: right;
+}
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link {
+  color: #00c;
+}

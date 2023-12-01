@@ -1,0 +1,36 @@
+.table-form {
+  margin: 1em auto 1em 2em;
+  font-size: 1.1 em;
+}
+
+.table-form input {
+  padding: 0.1em;
+}
+
+.table-form .field-name {
+  text-align: right;
+  padding: 0.5em 2em 0.5em 0.5em;
+  width: 7.5em;
+  font-weight: bold;
+}
+
+.table-form tr td {
+  height: 2em;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+.output-box {
+  height: 460px;
+  width: 580px;
+}
