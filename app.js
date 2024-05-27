@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
-const PORT = require("./config");
+const { PORT } = require("./config");
 const problems = require("./routes/home");
 const languages = require("./routes/submit");
 const login = require("./routes/login");

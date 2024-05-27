@@ -1,6 +1,11 @@
+require("dotenv").config();
+
+const { PASSWORD } = require("./config");
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/judge0");
+mongoose.connect(
+  `mongodb+srv://Divyanshu:${PASSWORD}@cluster0.ciu4kfo.mongodb.net/judge0`
+);
 const conn = mongoose.connection;
 conn.on("connected", () => {
   console.log("Database is successfully connected");
