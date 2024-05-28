@@ -15,12 +15,14 @@ const extensions = {
 function compile(code, input, lang, callback) {
   console.log(input);
   const fileName = `code.${extensions[lang]}`;
+  const filePath = path.join(__dirname, fileName);
+  const outputExecutable = path.join(__dirname, "file");
 
   const languageDetails = {
     "C++": {
       command: "g++",
       parameters: ["-o", "file", fileName],
-      exec: { command: ".\\file", parameters: [] },
+      exec: { command: "./file", parameters: [] },
     },
     Java: {
       command: "javac",
