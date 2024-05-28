@@ -119,7 +119,7 @@ router
       );
 
       compile(req.body.code, input, req.body.lang, async (err, output) => {
-        if (err) res.status(201).json({ error: err });
+        if (err) res.status(201).json({ error: err.message });
         else {
           deleteFiles(req.body.lang);
 
