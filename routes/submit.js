@@ -86,12 +86,12 @@ function compile(code, input, lang, callback) {
 }
 
 function deleteFiles(lang) {
-  fs.unlink(`.\\code.${extensions[lang]}`, (err) => {
+  fs.unlink(`./code.${extensions[lang]}`, (err) => {
     if (err) {
       console.log(`Failed to delete the cpp file : ${err}`);
     }
   });
-  fs.unlink(".\\file.exe", (err) => {
+  fs.unlink("./file.exe", (err) => {
     if (err) {
       console.log(`Failed to delete the exe file : ${err}`);
     }
