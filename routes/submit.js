@@ -127,6 +127,8 @@ router
 
           let outputMessage = "";
 
+          if (!answers) outputMessage = "Nothing was printed.";
+
           for (let i = 0; i < answers.length - 1; i++) {
             if (Number(answers[i]) !== problem.test_cases[i].answer) {
               outputMessage = `Test case ${i + 1} failed:\n${Object.entries(
